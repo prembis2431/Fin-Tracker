@@ -7,7 +7,11 @@ require("dotenv").config();
 const PORT = process.env.PORT;
 
 // middlewares
-app.use(cors())
+const corsOptions = {
+    origin: "*",
+    optionsSuccessStatus: 200,
+}
+app.use(cors(corsOptions));
 app.use(express.json())
 app.get('/', (req, res)=>{  // we can send the response once we get the '/', i.e- the homepage
 res.send('Hello World')
