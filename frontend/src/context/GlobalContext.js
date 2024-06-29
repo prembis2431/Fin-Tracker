@@ -8,7 +8,7 @@
 import React, { useContext, useState } from "react";
 import axios from "axios";
 
-const BASE_URL = "https://fin-tracker-server-cs2gtiwcs-premobrata-biswas-projects.vercel.app/";
+const BASE_URL = "http://localhost:5000/api/v1/";
 const GlobalContext = React.createContext();
 
 export const GlobalProvider = ({ children }) => {

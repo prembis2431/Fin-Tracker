@@ -1,15 +1,1 @@
-{
-    "version": 2,
-    
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/",
-        "methods": ["GET", "POST", "DELETE", "PUT", "PATCH", "OPTIONS"],
-        "headers": {
-
-          "Access-Control-Allow-Origin": "*"
-        }
-      }
-    ]
-  }
+{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/api/v1/" }] }

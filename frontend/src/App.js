@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
 import bg from "./img/bg.png";
 import { MainLayout } from "./styles/Layouts";
@@ -9,19 +9,33 @@ import Expenses from "./components/Expenses/Expenses";
 import Incomes from "./components/Incomes/Incomes";
 import { useGlobalContext } from "./context/GlobalContext";
 import ViewTransactions from "./components/ViewTransactions/ViewTransactions";
+import Authentication from "./components/Authentication/Authentication";
 
 function App() {
-  const [active, setActive] = useState(1); //cos our menuItem's id starts from 1
+  const [active, setActive] = useState(1);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const global = useGlobalContext();
 
+  useEffect(() => {
+    // Check if the user is authenticated when the component mounts
+    const authStatus = localStorage.getItem("isAuthenticated");
+    if (authStatus) {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
+  const handleAuthSuccess = () => {
+    setIsAuthenticated(true);
+    localStorage.setItem("isAuthenticated", "true");
+  };
 
   const displayData = () => {
     switch (active) {
       case 1:
         return <Dashboard />;
       case 2:
-        return <ViewTransactions/>;
+        return <ViewTransactions />;
       case 3:
         return <Incomes />;
       case 4:
@@ -30,15 +44,23 @@ function App() {
         return <Dashboard />;
     }
   };
+
   const orbMemo = useMemo(() => {
     return <Orb />;
   }, []);
+
   return (
     <AppStyled bg={bg} className="App">
       {orbMemo}
       <MainLayout>
-        <Navigation active={active} setActive={setActive} />
-        <main>{displayData()}</main>
+        {!isAuthenticated ? (
+          <Authentication onAuthSuccess={handleAuthSuccess} />
+        ) : (
+          <>
+            <Navigation active={active} setActive={setActive} />
+            <main>{displayData()}</main>
+          </>
+        )}
       </MainLayout>
     </AppStyled>
   );
