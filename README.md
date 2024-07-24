@@ -1,6 +1,6 @@
 # Fin-Tracker
 
-Developed a comprehensive financial tracking application to help users monitor and manage their finances efficiently. Designed a custom RESTful API using Node.js and Express, enabling robust backend functionality and reducing API response time by 40%. Integrated the frontend React application with the backend API using Axios, achieving a 30% increase in data retrieval speed and enhancing user experience. Furthermore, caching strategies are used to reduce server load by 25%. Additionally, component rendering is used for improved performance and simpler logic compared to React Router DOM.
+Developed a comprehensive financial tracking application to help users monitor and manage their finances efficiently. Designed a custom RESTful API using Node.js and Express, enabling robust backend functionality and reducing API response time. Leveraged MongoDB's capabilities to handle complex data relationships and perform efficient queries, contributing to a robust and performant backend. Integrated the frontend React application with the backend API using Axios, achieving a 30% increase in data retrieval speed and enhancing user experience. Furthermore, caching strategies are used to reduce server load. Additionally, component rendering is used for improved performance and simpler logic compared to React Router DOM.
 
 
 # Output
