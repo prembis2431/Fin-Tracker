@@ -100,6 +100,15 @@ An orb animation is provided in the background, making the interface appealing a
 
 
 
+# Getting Started
+## To get started with Fin-Tracker, follow these steps:
+- Clone this repository to your local machine.
+- Install dependencies using npm install.
+- Create and configure a MongoDB database and use the URL to integrate with your backend.
+- Run the app using npm start.
+
+
+
 
 
 
