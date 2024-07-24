@@ -68,7 +68,7 @@ Fin-Tracker is designed to look great on all devices, ensuring an excellent user
 
 
 ## Code Reusability:
-Usage of reusable components is prioritized. This promotes code reusability, a clean coding environment, and makes the code more readable and maintainable.
+The usage of reusable components is prioritized. This promotes code reusability, and a clean coding environment, and makes the code more readable and maintainable.
 
 
 ## Component Rendering Method:
@@ -79,12 +79,23 @@ Used the component rendering method instead of React-router-DOM, providing bette
 Although component rendering is implemented to navigate through pages, certain routes are protected and only accessible to authenticated users, enhancing security.
 
 
+## Global Context:
+It is used to share state across your entire application without the need to pass props down multiple levels. It increases the scalability and enhances real-time state updates.
+
+
 ## All Transactions Option:
 Users can easily monitor their daily incomes and expenses separately in the View Transactions option.
 
 
+## Styled Components:
+Incorporated the styled-components dependency for hassle-free styling of each component individually, and the styles can be easily shared across different components, promoting a modular and consistent design system.
+
+
 ## Animation:
 An orb animation is provided in the background, making the interface appealing and aesthetically pleasing.
+
+
+
 
 
 
