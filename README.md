@@ -39,51 +39,51 @@ Deployed link: https://fin-tracker-client.vercel.app/
 # Features
 
 
-### Custom API:
+## Custom API:
 Designed and implemented a custom RESTful API using Node.js and Express, ensuring robust backend functionality.
 
 
-### Efficient User Authentication:
+## Efficient User Authentication:
 Developed secure user authentication mechanisms without relying on external services, providing tailored access control.
 
 
-### Form Validation:
+## Form Validation:
 Incorporated comprehensive form validation to ensure accurate data entry and improved user interaction.
 
 
-### Optimized Performance:
+## Optimized Performance:
 Implemented caching strategies and database optimizations by using local storage and MongoDB, reducing server load by 25% and increasing overall system efficiency.
 
 
-### Seamless Frontend-Backend Integration:
+## Seamless Frontend-Backend Integration:
 Utilized Axios to connect the React frontend with the backend API, ensuring smooth data retrieval and manipulation.
 
 
-### Modularity:
+## Modularity:
 The project is organized into modular components, making it easy to maintain and extend.
 
 
-### Responsiveness:
+## Responsiveness:
 Fin-Tracker is designed to look great on all devices, ensuring an excellent user experience.
 
 
-### Code Reusability:
+## Code Reusability:
 Usage of reusable components is prioritized. This promotes code reusability, a clean coding environment, and makes the code more readable and maintainable.
 
 
-### Component Rendering Method:
+## Component Rendering Method:
 Used the component rendering method instead of React-router-DOM, providing better performance and control over rendering logic. Additionally, it is simpler to debug and reduces external dependencies, which simplifies project setup and maintenance.
 
 
-### Protected Routes:
+## Protected Routes:
 Although component rendering is implemented to navigate through pages, certain routes are protected and only accessible to authenticated users, enhancing security.
 
 
-### All Transactions Option:
+## All Transactions Option:
 Users can easily monitor their daily incomes and expenses separately in the View Transactions option.
 
 
-### Animation:
+## Animation:
 An orb animation is provided in the background, making the interface appealing and aesthetically pleasing.
 
 
