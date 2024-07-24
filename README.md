@@ -51,8 +51,12 @@ Developed secure user authentication mechanisms without relying on external serv
 Incorporated comprehensive form validation to ensure accurate data entry and improved user interaction.
 
 
+## MongoDB Integration and Schema Design:
+Leveraged MongoDB's capabilities to handle complex data relationships and perform efficient queries, contributing to a robust and performant backend.
+
+
 ## Optimized Performance:
-Implemented caching strategies and database optimizations by using local storage and MongoDB, reducing server load by 25% and increasing overall system efficiency.
+Implemented caching strategies and database optimizations by using local storage, reducing server load by 25%, and increasing overall system efficiency.
 
 
 ## Seamless Frontend-Backend Integration:
