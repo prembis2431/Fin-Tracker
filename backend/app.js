@@ -22,7 +22,6 @@ res.send('Hello World')
 
 // it is going to read all the files which we have in routes folder
 readdirSync('./routes').map((route)=> app.use('/api/v1', require('./routes/' + route))) // say, we have multiple files in the route folder directory...so we map them 
-
 // app.use("/api", router)
 
 const server = () => {

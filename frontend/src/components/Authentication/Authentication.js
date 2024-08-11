@@ -63,8 +63,8 @@ console.log("handleSignup");
       );
 
       const result = response.data;
-      console.log(result);
-      if (response.status === 201) {
+      console.log(response.status);
+      if (response.status === 200) {
        setIsSignInForm(true);
       } else {
         console.error(result.message);

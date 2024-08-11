@@ -53,7 +53,7 @@ const Form = () => {
           type="text"
           value={amount}
           name={"amount"}
-          placeholder="Salary Amount"
+          placeholder="Income Amount"
           onChange={handleInput("amount")}
         />
       </div>

@@ -19,7 +19,8 @@ const signup = (req, res) => {
           const newUser = new User(userObject);
           newUser.save();
 
-          res.json({newUser}); // Side-note: if we are sending string response, json should not be used.
+          res.status(200).json({newUser}); // Side-note: if we are sending string response, json should not be used.
+          console.log(newUser);
         })
         .catch((err) => {
           console.log(err);
